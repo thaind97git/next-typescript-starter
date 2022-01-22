@@ -1,0 +1,41 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "rules": {
+    "react/jsx-closing-bracket-location": "warn",
+    "react/jsx-tag-spacing": "off",
+    "array-bracket-spacing": [0, "never"],
+    "react/prop-types": "off",
+    "prefer-const": "warn",
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-console": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-useless-escape": "off",
+    "no-unused-vars": "off",
+    // unknown is I don't know; any is I don't care
+    "@typescript-eslint/no-explicit-any": ["off", { "ignoreRestArgs": true }],
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/ban-types": ["off"],
+    "react/display-name": ["off"]
+  }
+}
